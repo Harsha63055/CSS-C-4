@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 150px;
+            white-space: nowrap;
+            box-shadow:5px 5px orange, 5px 10px 5px red;
+            box-sizing: content-box;
+            
+        }
+        p{
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .p1{
+            border: 2px solid black;
+            box-shadow: 0px 0px 5px 5px black;
+            margin: auto;
+            background-color: aqua;
+            display: none;
+            text-shadow:1px 1px black;
+        }
+        div:hover~.p1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit repellendus natus dolorum! Corporis quaerat a est, voluptatum ea eum ullam suscipit possimus enim velit in ducimus reprehenderit ut et.</p>
+    </div>
+    <p class="p1" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat voluptatibus alias sunt delectus officiis velit quod quidem atque consequatur voluptatum numquam, possimus odio eligendi odit cupiditate tempore fugiat laboriosam.</p>
+    </body>
+</html>

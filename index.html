@@ -1,40 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        div{
-            border: 2px solid black;
-            width: 150px;
-            white-space: nowrap;
-            box-shadow:5px 5px orange, 5px 10px 5px red;
-            box-sizing: content-box;
-            
-        }
-        p{
-
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .p1{
-            border: 2px solid black;
-            box-shadow: 0px 0px 5px 5px black;
-            margin: auto;
-            background-color: aqua;
-            display: none;
-            text-shadow:1px 1px black;
-        }
-        div:hover~.p1{
-            display: block;
-        }
+      .b1 {
+        border: 2px solid black;
+        height: 200px;
+        width: 150px;
+        background-color: darkgrey;
+        box-shadow: 2px 5px brown;
+        margin-left: -300px;
+      }
+      h3 {
+        margin-top: 135px;
+        
+      }
+      .img1 {
+        border: 2px solid black;
+        width: 88px;
+        height: 100px;
+        margin-top: -200px;
+        border-color: red;
+        margin-left: -300px;
+      }
+      .b2 {
+        border: 2px solid black;
+        height: 20px;
+        width: 100px;
+        margin-top: 60px;
+        background-color: chartreuse;
+        box-shadow: 2px 2px blue;
+        margin-left: -300px;
+      }
+      h5 {
+        margin-top: 1px;
+      }
+      p {
+        border: 2px solid black;
+        background-color: darkkhaki;
+        display: none;
+      }
+      .b2:hover + p {
+        display: block;
+      }
+      .b3 {
+        border: 2px solid black;
+        height: 20px;
+        width: 100px;
+        margin-top: 60px;
+        background-color: chartreuse;
+        box-shadow: 2px 2px blue;
+        margin-left: 180px;
+        
+      }
+      .b4 {
+        border: 2px solid black;
+        height: 200px;
+        width: 150px;
+        background-color: darkgrey;
+        box-shadow: 2px 5px brown;
+        margin-top: 50px;
+        margin-left: 180px;
+        
+      }
+      .b3:hover:hover ~.p2 {
+        display: block;
+      }
+      body {
+        background-color: aqua;
+      }
+      .img2{
+        border: 2px solid black;
+        width: 88px;
+        height: 100px;
+        margin-top: -200px;
+        border-color: red;
+        margin-left: 180px;
+      }
     </style>
-</head>
-<body>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit repellendus natus dolorum! Corporis quaerat a est, voluptatum ea eum ullam suscipit possimus enim velit in ducimus reprehenderit ut et.</p>
-    </div>
-    <p class="p1" style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat voluptatibus alias sunt delectus officiis velit quod quidem atque consequatur voluptatum numquam, possimus odio eligendi odit cupiditate tempore fugiat laboriosam.</p>
-    </body>
+  </head>
+  <body>
+    <center>
+        <h1>HOVER ON WIKIPEDIA</h1>
+      <div class="b1">
+        <div>
+          <h3>PRABHAS</h3>
+        </div>
+      </div>
+      <div class="img1">
+        <img
+          src="https://d12d6l12s3d372.cloudfront.net/prabhas_b05186fa7a.jpeg"
+          width="88"
+          height="100"
+          alt=""
+        />
+      </div>
+      <div class="b2"><h5>WIKIPEDIA</h5></div>
+      <p>
+        Uppalapati Venkata Suryanarayana Prabhas Raju born 23 October 1979,
+        known mononymously as Prabhas, is an Indian actor who predominantly
+        works in Telugu cinema.He is one of the highest-paid actors in Indian
+        cinema and has been featured in Forbes India's Celebrity 100 list since
+        2015.Referred to in the media as the "Rebel Star", he has appeared in
+        over 20 films, and has received seven Filmfare Awards nominations, a
+        Nandi Award, and a SIIMA Award
+      </p>
+      <div class="b4">
+        <div>
+          <h3>ALLU ARJUN</h3>
+        </div>
+      </div>
+      <div class="img2">
+        <img
+          src="https://www.hindustantimes.com/ht-img/img/2024/09/23/1600x900/Allu_Arjun_1727087751959_1727090559176.jpg"
+          width="88"
+          height="100"
+          alt=""
+        />
+      </div>
+      <div class="b3"><h5>WIKIPEDIA</h5></div>
+      <p class="p2">
+        Allu Arjun (born 8 April 1982) is an Indian actor who works in Telugu
+        cinema. One of the highest-paid actors in Indian cinema,[1] Allu Arjun
+        has been featured in Forbes India's Celebrity 100 list since 2014.[2] He
+        is a recipient of several awards including a National Film Award, six
+        Filmfare Awards, and three Nandi Awards.[3] He is regarded as one of the
+        finest dancers in Indian cinema.[4] He is popularly referred to as
+        "Stylish Star" and "Icon Star".
+      </p>
+    </center>
+  </body>
 </html>
